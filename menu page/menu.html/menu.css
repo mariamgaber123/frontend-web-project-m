@@ -1,0 +1,68 @@
+.bodym{
+    background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+   color: rgb(16, 132, 111);}
+.menud{
+    margin: 4pc 4pc;
+    background-color: white;
+    padding: 60px 150px;
+    height: 89pc;
+}
+.tmenu{
+   
+    text-align: center; 
+   font-size: 40px;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   font-weight: <weight>;
+   font-style: normal;
+   padding-bottom: 50px;
+   
+}
+.md{
+   display: flex;
+   direction: row;
+  
+}
+.mtt{
+    
+    padding-right: 58pc;
+}
+.mtt2{
+    padding-right: 57.21pc;
+   
+}
+.mt{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+  url('fonts/BarlowCondensed-Regular.woff') format('woff');
+  font-size: 28px;
+}
+.mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+    font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+
+}
+.mtdr2{
+    padding-right: 56pc;
+}
+.mtd{
+    font-family: 'Nunito', sans-serif;
+
+    
+    font-style: normal; 
+    font-size: 15px;
+}
+.mtt3{
+padding-right: 56.8pc;
+}
+.mtdr{
+    padding-right: 59pc;
+}
