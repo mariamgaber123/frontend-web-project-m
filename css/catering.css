@@ -137,7 +137,10 @@ color: #10846f;
     border-radius: 5px;
  /* display: block; */
     /* max-width: 80%; */
- 
+    transition: transform 0.3s ease;
+}
+.PlatesImages img:hover{
+ transform: scale(1.1);
 }
 .PlatesImages {
     aspect-ratio: 1 / 1;
