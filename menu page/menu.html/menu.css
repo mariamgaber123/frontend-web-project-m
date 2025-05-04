@@ -2,12 +2,13 @@
     background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
     background-repeat: no-repeat;
    background-size: 100%;
-   color: rgb(16, 132, 111);}
+   color: rgb(16, 132, 111);
+}
 .menud{
-    margin: 4pc 4pc;
+    margin: 64px 64px;
     background-color: white;
     padding: 60px 150px;
-    height: 89pc;
+    height: 1424px;
 }
 .tmenu{
    
@@ -27,10 +28,10 @@
 }
 .mtt{
     
-    padding-right: 58pc;
+    padding-right: 928px;
 }
 .mtt2{
-    padding-right: 57.21pc;
+    padding-right: 915.36px;
    
 }
 .mt{
@@ -51,7 +52,7 @@
 
 }
 .mtdr2{
-    padding-right: 56pc;
+    padding-right: 896px;
 }
 .mtd{
     font-family: 'Nunito', sans-serif;
@@ -61,8 +62,83 @@
     font-size: 15px;
 }
 .mtt3{
-padding-right: 56.8pc;
+padding-right: 908.8px;
 }
 .mtdr{
-    padding-right: 59pc;
+    padding-right: 944px;
 }
+@media(max-width:800px){
+    .bodym{
+        background-repeat: repeat-y;
+    }
+    .menud{
+        margin: 30px 30px;
+        
+        padding: 20px 50px;  
+    }
+    .tmenu{
+        font-size: 30px;}
+        .mtt{
+           font-size: 18px;
+            padding-right: 420px;
+        }
+        .mtt2{
+            padding-right: 410px;
+           
+        }
+        .mt{
+            font-size: 23px;
+        }
+        .mtdr2{
+            padding-right: 395px;
+        }
+        .mtt3{
+            padding-right: 80px;
+        }
+        .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+            font-size: 16px;
+        }
+        .mtdr{
+            padding-right: 435px;
+        }
+        .mtd{
+            font-size: 12px;
+        }
+}
+@media(max-width:600px){
+    
+    .menud{
+        margin: 30px 30px;
+        
+        padding: 20px 50px;  
+    }
+    .tmenu{
+        font-size: 30px;}
+        .mtt{
+           font-size: 18px;
+            padding-right: 275px;
+        }
+        .mtt2{
+            padding-right: 265px;
+           
+        }
+        .mt{
+            font-size: 23px;
+        }
+        .mtdr2{
+            padding-right: 250px;
+        }
+        .mtt3{
+            padding-right: 80px;
+        }
+        .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+            font-size: 16px;
+        }
+        .mtdr{
+            padding-right: 290px;
+        }
+        .mtd{
+            font-size: 12px;
+        }
+}
+
