@@ -227,9 +227,15 @@ color: #10846f;
     text-align: center;
     color: #10846f;
 }
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
 .allPlates a .btncontact{
     font-family: "Quicksand", sans-serif;
-    width: 22vmin;
+    width: 21vmin;
     height: 7vmin;
 background-color: #10846f;
 color: #fff;
@@ -238,14 +244,38 @@ border: none;
 margin: 50px 0;
 border-radius: 2px;
 cursor: pointer;
+font-weight:500 ;
+
 }
 .allPlates a .btncontact:hover{
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
     color: #10846f;
     background-color: #fff;
 
 }
 .allPlates a .btncontact:active{
+    transform: scale(0.96);
+}
+.allPlates a .btnrv{
+    font-family: "Quicksand", sans-serif;
+    width: 21vmin;
+    height: 7vmin;
+background-color: #10846f;
+color: #fff;
+font-size: 2.5vmin;
+border: none;
+margin: 50px 0;
+border-radius: 2px;
+cursor: pointer;
+font-weight:500 ;
+}
+.allPlates a .btnrv:hover{
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    color: #10846f;
+    background-color: #fff;
+
+}
+.allPlates a .btnrv:active{
     transform: scale(0.96);
 }
  

@@ -2,7 +2,7 @@
  
 
 
-fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')
+fetch ('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')
   .then(response => response.json())
   .then(resObject => {
     const contALL = document.createElement('div');
@@ -10,7 +10,8 @@ fetch('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')
 const header=document.createElement('h1');
 header.textContent="Discover the Taste of China through Our Diners' Eyes";
 header.classList.add('Opinion');
-document.body.append(header);
+const reviewSection = document.getElementById('reviewMe');
+reviewSection.append(header);
     fetch('https://api.npoint.io/bfe4b8ba89ce7bc5e5f2')
       .then(res => res.json())
       .then(obj => {
@@ -56,6 +57,6 @@ document.body.append(header);
           contALL.append(divPic);
         });
 
-        document.body.append(contALL);
+        reviewSection.append(contALL);
       });
   });
