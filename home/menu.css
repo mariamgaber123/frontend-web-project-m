@@ -13,10 +13,11 @@
 
 
 .menud{
-    margin: 80px 80px;
+    margin: 100px 80px;
+    margin-top: 160px;
     background-color: white;
     padding: 50px 130px;
-    height:90%;
+    height:1200px;
 }
 .tmenu{
    
@@ -27,20 +28,30 @@
    /* font-weight: <weight>; */
    font-style: normal;
    padding-bottom: 50px;
-   
+    /* gap :70px; */
 }
 .md{
    display: flex;
    direction: row;
-  
+   justify-content: space-between;
+   /* align-items: center; */
+   gap :100px;
+  padding:12px 0;
+  /* word-spacing: 10px; */
 }
 .mtt{
-    
-    padding-right: 928px;
+    flex: 1;
+    /* padding-right: 928px; */
+   padding-top: 3px;
+   padding-bottom: 2px;
+    /* gap :70px; */
+}
+.mtp{
+    margin-left: auto;
 }
 .mtt2{
-    padding-right: 915.36px;
-   
+    /* padding-right: 915.36px; */
+    /* gap :70px; */
 }
 .mt{
     font-family: 'Barlow Condensed', sans-serif;
@@ -53,14 +64,20 @@
   font-size: 28px;
 }
 .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
     font-family: 'Nunito', sans-serif;
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
-
+  gap :70px;
+  padding-top:27px ;
+  /* word-spacing: 10px; */
+   
 }
 .mtdr2{
-    padding-right: 896px;
+    /* padding-right: 896px; */
 }
 .mtd{
     font-family: 'Nunito', sans-serif;
@@ -70,45 +87,48 @@
     font-size: 15px;
 }
 .mtt3{
-padding-right: 908.8px;
+/* padding-right: 908.8px; */
 }
 .mtdr{
-    padding-right: 944px;
+    /* padding-right: 944px; */
 }
 
 @media(max-width:800px){
     .bodym{
         background-repeat: repeat-y;
+        
     }
     .menud{
-        margin: 30px 30px;
-        
-        padding: 20px 50px;  
+        margin: 140px 50px;
+        margin-bottom: 40px;
+        padding: 20px 20px;  
+        height: 900px;
     }
     .tmenu{
         font-size: 30px;}
         .mtt{
-           font-size: 18px;
-            padding-right: 420px;
+
+            /* padding-right: 420px; */
         }
         .mtt2{
-            padding-right: 410px;
+            /* padding-right: 410px; */
            
         }
         .mt{
             font-size: 23px;
         }
         .mtdr2{
-            padding-right: 395px;
+            /* padding-right: 395px; */
         }
         .mtt3{
-            padding-right: 80px;
+            /* padding-right: 80px; */
         }
         .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
             font-size: 16px;
+            padding-top:2px ;
         }
         .mtdr{
-            padding-right: 435px;
+            /* padding-right: 430px; */
         }
         .mtd{
             font-size: 12px;
@@ -117,37 +137,37 @@ padding-right: 908.8px;
 @media(max-width:600px){
     
     .menud{
-        margin: 30px 30px;
-        
-        padding: 20px 50px;  
+        margin: 20px 20px;
+        height: 900px;
+        /* padding: 20px 50px;   */
     }
     .tmenu{
         font-size: 30px;}
         .mtt{
            font-size: 18px;
-            padding-right: 275px;
+            /* padding-right: 275px; */
         }
         .mtt2{
-            padding-right: 265px;
+            /* padding-right: 265px; */
            
         }
         .mt{
             font-size: 23px;
         }
         .mtdr2{
-            padding-right: 250px;
+            /* padding-right: 250px; */
         }
         .mtt3{
-            padding-right: 80px;
+            /* padding-right: 80px; */
         }
         .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
             font-size: 16px;
         }
         .mtdr{
-            padding-right: 290px;
+            /* padding-right: 290px; */
         }
         .mtd{
-            font-size: 12px;
+            /* font-size: 12px; */
         }
 }
 

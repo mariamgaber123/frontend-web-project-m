@@ -379,8 +379,8 @@ header img{
     align-items: center;
     }
     .sec22{
-      width: 550px;
-      height: 400px;
+      width: 690px;
+      height: 500px;
       /* background-color: #ffffff; */
       color: rgba(16,132,111,255);
      text-align: center;
@@ -404,11 +404,12 @@ header img{
       padding-top: 10px;
     }
     .texxtt p{
-      width: 500px;
+      width: 590px;
       font-size: 15px;
       font-weight: 400;
       height: 70%;
-      padding-left: 60px;
+      /* align-items: center; */
+      padding-left: 90px;
       padding-top: 30px;
       line-height: 1.8rem;
       text-indent: 0;
@@ -417,7 +418,8 @@ header img{
       /* border-right: 2px solid rgba(16,132,111,255); */
      font-family:  "Montserrat", sans-serif;
      text-align: center;
-     padding-bottom: 20px;
+     padding-bottom: 10px;
+     word-spacing: 2px;
     }
     .bttn{
       padding-top: 10px;
@@ -452,6 +454,8 @@ header img{
       position: relative;
       overflow: hidden; /* يمنع الصورة من الخروج خارج الإطار */
       display:flex;
+      /* background-color: rgba(0, 0, 0, 0.597); */
+      /* background-color: rgb(44, 44, 44); */
       /* border-radius: 10px; */
     }
     .im img{
@@ -459,9 +463,12 @@ header img{
       height: 280px;
       width: 265px;
       transition: transform 0.5s ease;
+      background-color: rgba(13, 13, 13, 0.841);
+      /* mix-blend-mode: color;background-blend-mode:color; */
     }
     .im img:hover{
       transform: scale(1.15);
+      /* mix-blend-mode:color-dodge; */
     }
     .im i{
       font-size: 24px;
@@ -662,8 +669,7 @@ header img{
   
  }
  @media (max-width: 768px){
-  
-   
+    
      .navbar{
       flex-direction: column;
      position: absolute;
@@ -711,17 +717,22 @@ header img{
       display: block;
      
    }
+   .iconn a{
+    margin-left: 70px;
+   }
    .main{
       /* height: auto; */
-     height:700px;
-     width: 670px;
-      /* background-size:contain; */
-      background-size: 670px  700px; 
+     height:731px;
+     width: 744px;
+      background-size: cover; 
+      background-attachment: fixed;
+      position: relative;
+     /* display:block; */
    }
    .text{
-    padding-left: 40px;
+    padding-left: 85px;
     text-align: center;
-    padding-right: 0px;
+    /* padding-right: 0px; */
     /* margin: 0px; */
    }
    .main .tt1{
@@ -749,7 +760,7 @@ header img{
    }
    .menuu{
    
-    width: 400px;
+    width: 450px;
     height: 390px;
    
    }
@@ -796,8 +807,8 @@ header img{
   align-items: center;
   }
   .sec22{
-    width: auto;
-    height: 400px;
+    width: 600px;
+    height: 430px;
   }
   .texxtt{
      text-align: center;
@@ -810,15 +821,15 @@ header img{
     font-size: 14px;
     font-weight: 380;
     /* height: 70%; */
-    padding-left: 20px;
-    padding-top: 30px;
-    line-height: 1.8rem;
+    padding-left: 60px;
+    padding-top: 25px;
+    line-height: 1.7rem;
    
   }
   .bttn button{
     width: 123px;
     height: 32px;
-   
+   padding-top: 2px;
   }
   
   .like{
@@ -843,6 +854,28 @@ header img{
     bottom: 10px;
     right: 350px;
    
+  }
+  .im i{
+    font-size: 24px;
+    color: white;
+    /* background:transparent; */
+    position: absolute;
+    bottom: 10px;
+   left: 10px;
+    /* z-index: 100; */
+    cursor: pointer;
+    padding: 5px;
+    border-radius:50%;
+    transition: color 0.5s ease;
+    /* font-weight: 50; */
+    opacity: 0;
+  }
+
+  .im:hover i{
+    opacity: 1;
+  }
+  .im i.liked {
+    color: red;
   }
  
 .footer{
