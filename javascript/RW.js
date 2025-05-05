@@ -8,7 +8,7 @@ fetch ('https://www.themealdb.com/api/json/v1/1/filter.php?a=Chinese')
     const contALL = document.createElement('div');
     contALL.classList.add('container');
 const header=document.createElement('h1');
-header.textContent="Discover the Taste of China through Our Diners' Eyes";
+header.textContent="Taste China through Our Diners";
 header.classList.add('Opinion');
 const reviewSection = document.getElementById('reviewMe');
 reviewSection.append(header);
