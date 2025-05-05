@@ -18,7 +18,7 @@ listNav.forEach((ele,ind)=>{
     // traaaaaaaay
 
 
-    fetch("https://api.npoint.io/bfe4b8ba89ce7bc5e5f2")
+    fetch("https://api.npoint.io/85c1b5584d4e9c021dc7")
     .then(res => res.json())
     .then(data => {
       const allSections = document.querySelectorAll('#ContentPlates li[data-category]');
