@@ -1,0 +1,99 @@
+ .reviewPeople{
+    background-color:#FFBD14 ;
+    /* padding: 100px; */
+ }
+  .Opinion{
+   margin-top: 150px;
+   margin-bottom: 70px;
+    text-align: center;
+    color: #fff;
+ /* font-size: 2em; */
+  word-spacing: 7px;
+    padding: 10px;
+    font-weight: 600;
+    font-family: "Quicksand", sans-serif;
+line-height: 1.6em;
+word-wrap: none;
+  }
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 50px;
+    background-color: #f9f9f9 ;
+    /* background-color: #FFF3C3; */
+ 
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: auto;
+ 
+  }
+  /* الديف بتاع كل ريفيو */
+  .picture {
+    /* background-color: #FFFDF8; */
+    /* border-radius: 12px; */
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+ 
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 20px;
+   
+  }
+  
+ 
+  .picture:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  
+ 
+  .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+ /* name of plate */
+
+  .picture h2 {
+    font-size: 1.7rem;
+    margin-top: 10px;
+  color: #10846f;
+    font-weight: 700;
+    font-family: "Quicksand", sans-serif;
+  }
+  .review{
+    /* background-color: #fff; */
+text-align: left;
+    margin-top: 10px;
+  color: #333 ;
+  }
+  /* date of publish */
+ h4{
+  font-family: "Quicksand", sans-serif;
+  margin: 10px;
+  font-size: 0.9rem;
+font-style: italic;
+  color: #6AB39D ;
+ }
+ /* اسم النااشر */
+ h3{
+  font-family: "Quicksand", sans-serif;
+  margin: 10px;
+  color: #10846f;
+  font-size: 1.4rem;
+ }
+ /* الكومنت بتاعه */
+ p{
+margin: 10px;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+line-height: 1.7rem;
+  color: #3D3D3D;
+ }
+ .stars{
+  color: #FFBD14;
+  font-size: 1.6rem;
+ }
+  
