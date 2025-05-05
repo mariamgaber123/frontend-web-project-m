@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {  
+    background-color: #FFBD14;
+}
+
+.background-about {
+    min-height: 200vh;
+    display: grid;
+    grid-template-columns: repeat(15, minmax(250px,1fr));
+    grid-template-rows: repeat(8, 120px);
+    position: relative;
+    top: 140px;
+    margin: auto;
+}
+
+.leaves {
+    width: 70%;
+    height: 110%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    position: relative;
+    top: 20%;
+    left: 30%;
+  
+    opacity: 0;
+    transform: translateX(-130px);
+    animation: slideIn 1.5s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about {
+    width: 120%;
+    height: 120%;
+    background-color: #fff;
+    grid-column: 2/4;
+    grid-row: 1/4;
+    position: relative;
+    top: 35%;
+    left: 22%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    color: #10846f;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.about h1{
+    font-family: "Dancing Script";
+    transform: rotate(-8deg);
+    position: relative;
+    bottom: 12%;
+    color: #10846f;
+    font-size: 2rem;
+    font-weight: 600;    
+}
+
+.about p{
+    text-align: center;
+    display: inline-block;
+    width: 25.6rem;
+    font-family: "Quicksand", sans-serif;
+    color: #10846f;
+    line-height: 1.6rem;
+    font-size: 0.91rem;
+    font-weight: 420;
+}
+
+.inRes{
+    border: 10px solid white;
+    width: 93%;
+    height: 125%;
+    grid-column: 4/6;
+    grid-row: 2/7;
+    position: relative;
+    top: 22%;
+    right: 20%;
+    opacity: 0;
+    transform: translateY(150px);
+    animation: slideIn 1.5s ease-in-out forwards;
+
+}
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.singleTree{
+    width: 40%;
+    height: 130%;
+    grid-column: 2/3 ;
+    grid-row: 6/7;
+    position: relative;
+    top: 14%;
+    left: 4%;
+}
+
+#tree2{
+    left: 54%;
+}
+
+#tree3{
+    left: 104%;
+}
+
+@media (max-width: 992px) {
+    .background-about {
+        min-height: 250px;
+        grid-template-columns: repeat(6, 1fr); 
+        grid-template-rows: auto;              
+        gap: 20px;
+        padding: 20px;
+    }
+
+
+    .leaves {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        width: 80%;
+        height: auto;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        transform: none;
+
+    }
+    .about {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        width: 100%;
+        height: 150%;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+    }
+
+    .about h1{
+        font-size: 2.5rem;
+    }
+
+    .about p{
+        text-align: start;
+        width: 30rem;
+        font-size: 1.5rem;
+    }
+
+    .inRes {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        width: 100%;
+        height: auto;
+        right: 0;
+        top: 150px;
+        margin: 0 auto;
+        transform: none;
+    }
+
+    .singleTree {
+        display: none;
+    }
+
+    .footer{
+        position: relative;
+        top: 350px;
+    }
+}
+
+@media (max-width: 786px) {
+    .background-about {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto;
+    }
+
+    .about,
+    .leaves,
+    .inRes{
+        grid-column: 1 / -1;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+    }
+
+    .inRes{
+        top:200px ;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    .about h1 {
+        font-size: 1.5rem;
+    }
+
+    .singleTree {
+        display: none;
+    }
+}
