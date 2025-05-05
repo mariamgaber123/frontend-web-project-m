@@ -450,18 +450,11 @@ header img{
     }
     .im{
       position: relative;
-      overflow: hidden; /* يمنع الصورة من الخروج خارج الإطار */
-      display:flex;
-      /* border-radius: 10px; */
     }
     .im img{
       /* justify-content: space-between; */
       height: 280px;
       width: 265px;
-      transition: transform 0.5s ease;
-    }
-    .im img:hover{
-      transform: scale(1.15);
     }
     .im i{
       font-size: 24px;
@@ -478,7 +471,6 @@ header img{
       /* font-weight: 50; */
       opacity: 0;
     }
-
     .im:hover i{
       opacity: 1;
     }
@@ -936,5 +928,4 @@ flex-direction: column;
 }
    
  }
- 
  
