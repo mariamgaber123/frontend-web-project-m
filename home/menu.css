@@ -1,14 +1,22 @@
 .bodym{
+ 
+  margin: 0px;
+}
+.menu{
     background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
     background-repeat: no-repeat;
    background-size: 100%;
    color: rgb(16, 132, 111);
+   width: 100%;
+   overflow-x: hidden;
 }
+
+
 .menud{
-    margin: 64px 64px;
+    margin: 80px 80px;
     background-color: white;
-    padding: 60px 150px;
-    height: 1424px;
+    padding: 50px 130px;
+    height:90%;
 }
 .tmenu{
    
@@ -67,6 +75,7 @@ padding-right: 908.8px;
 .mtdr{
     padding-right: 944px;
 }
+
 @media(max-width:800px){
     .bodym{
         background-repeat: repeat-y;
