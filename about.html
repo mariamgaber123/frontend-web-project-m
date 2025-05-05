@@ -7,18 +7,13 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/home/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-  />
-  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-  <link rel="icon" href="images/icon.png" type="image/png" />
+
+    <link rel="stylesheet" href="/css/about.css" />
     <title>About us</title>
   </head>
   <body>
@@ -37,11 +32,11 @@
           <i class="bx bx-x" id="close"></i>
         </label>
         <nav class="navbar" id="navbar">
-          <a href="home.html">HOME</a>
-          <a href="about.html">ABOUT</a>
-          <a href="menu.html">MENU</a>
-          <a href="catering.html">CATERING</a>
-          <a href="contact.html">CONTACT</a>
+          <a href="/home/home.html">HOME</a>
+          <a href="/about.html">ABOUT</a>
+          <a href="/home/menu.html">MENU</a>
+          <a href="/home/catering.html">CATERING</a>
+          <a href="/contact.html">CONTACT</a>
         </nav>
       </header>
       <div class="iconn">
@@ -55,72 +50,29 @@
         ></a>
       </div>
     </div>
-    <!-- ////////////////////////////////Contact us section ////////////////////////////////-->
-    <section class="contact">
-      <div class="formContact">
-        <h1>Contact us</h1>
+    <!-- ////////////////////////////////About us section ////////////////////////////////-->
+    <section class="background-about">
+      <img src="images/Green leaves.png" alt="leaves" class="leaves" />
+      <div class="about">
+        <h1>About us</h1>
         <p>
-          We welcome queries, feedback and suggestions. We want to hear from
-          you!
+          I'm a paragraph. Click here to add your own text and edit me. It’s
+          easy. Just click “Edit Text” or double click me to add your own
+          content and make changes to the font. Feel free to drag and drop me
+          anywhere you like on your page. I’m a great place for you to tell a
+          story and let your users know a little more about you.
         </p>
-        <div class="vertical-line"></div>
-        <form id="myForm" novalidate>
-          <label for="fname" class="formE">Enter Your First Name*</label>
-          <input type="text" id="fname" name="fname" required />
-          <span class="error-message">
-            <img
-              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
-              alt="Warning Icon"
-            />
-            Please enter your first name</span
-          >
-
-          <label for="lname">Enter Your Last Name*</label>
-          <input type="text" id="lname" name="lname" required />
-          <span class="error-message">
-            <img
-              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
-              alt="Warning Icon"
-            />
-            Please enter your last name</span
-          >
-
-          <label for="email">Enter Your Email*</label>
-          <input type="email" id="email" name="email" required />
-          <span class="error-message">
-            <img
-              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
-              alt="Warning Icon"
-            />
-            Please enter your email
-          </span>
-
-          <label for="phone">Enter Your Phone</label>
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            pattern="^\+?[0-9\s\-]{7,20}$"
-          />
-
-          <label for="message">Enter Your Message</label>
-          <textarea name="message" rows="5" cols="25"></textarea>
-          <input type="submit" class="submitBtn" />
-        </form>
       </div>
-
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13818.893544709194!2d31.182491950000003!3d30.016098099999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584697a04e36af%3A0xd9e521b3a519c047!2sEl-Abd%20Market!5e0!3m2!1sen!2seg!4v1746466299946!5m2!1sen!2seg"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+      <img
+        src="images/Restaurant Interior.png"
+        alt="Restaurant"
+        class="inRes"
+      />
+      <img src="images/Tree.gif" alt="tree" class="singleTree" id="tree1" />
+      <img src="images/Tree.gif" alt="tree" class="singleTree" id="tree2" />
+      <img src="images/Tree.gif" alt="tree" class="singleTree" id="tree3" />
     </section>
+
     <!-- ////////////////////////////////Footer section ////////////////////////////////-->
     <footer id="footer" class="footer">
       <div class="foot">
@@ -175,7 +127,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
-    <script src="/javascript/contact.js"></script>
+    <script src="/home/script.js"></script>
   </body>
 </html>
