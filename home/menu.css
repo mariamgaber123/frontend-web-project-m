@@ -1,6 +1,6 @@
 .bodym{
- 
   margin: 0px;
+  line-height: 40px;
 }
 .menu{
     background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
@@ -16,8 +16,8 @@
     margin: 100px 80px;
     margin-top: 160px;
     background-color: white;
-    padding: 50px 130px;
-    height:1200px;
+    padding: 90px 130px;
+    height:auto;
 }
 .tmenu{
    
@@ -36,7 +36,8 @@
    justify-content: space-between;
    /* align-items: center; */
    gap :100px;
-  padding:12px 0;
+   padding-bottom: 8px;
+
   /* word-spacing: 10px; */
 }
 .mtt{
@@ -72,7 +73,8 @@
   font-size: 20px;
   font-weight: 700;
   gap :70px;
-  padding-top:27px ;
+  padding-top:20px ;
+  
   /* word-spacing: 10px; */
    
 }
