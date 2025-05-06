@@ -1,6 +1,6 @@
 .bodym{
   margin: 0px;
-  line-height: 40px;
+  line-height: 30px;
 }
 .menu{
     background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
@@ -36,7 +36,7 @@
    justify-content: space-between;
    /* align-items: center; */
    gap :100px;
-   padding-bottom: 8px;
+   padding-bottom: 15px;
 
   /* word-spacing: 10px; */
 }
@@ -63,6 +63,7 @@
   src: url('fonts/BarlowCondensed-Regular.woff2') format('woff2'),
   url('fonts/BarlowCondensed-Regular.woff') format('woff');
   font-size: 28px;
+  padding-bottom: 5px;
 }
 .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
     display: flex;
@@ -98,13 +99,15 @@
 @media(max-width:800px){
     .bodym{
         background-repeat: repeat-y;
+        line-height: 25px;
+        background-size: auto;
         
     }
     .menud{
         margin: 140px 50px;
         margin-bottom: 40px;
-        padding: 20px 20px;  
-        height: 900px;
+        padding: 50px 40px;  
+        height: auto;
     }
     .tmenu{
         font-size: 30px;}
@@ -118,6 +121,7 @@
         }
         .mt{
             font-size: 23px;
+            padding-bottom: 5px;
         }
         .mtdr2{
             /* padding-right: 395px; */
@@ -127,7 +131,7 @@
         }
         .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
             font-size: 16px;
-            padding-top:2px ;
+            padding-top:10px ;
         }
         .mtdr{
             /* padding-right: 430px; */
@@ -137,10 +141,13 @@
         }
 }
 @media(max-width:600px){
-    
+    .bodym{
+        line-height: 20px;
+    }
     .menud{
         margin: 20px 20px;
         height: 900px;
+        height: auto;
         /* padding: 20px 50px;   */
     }
     .tmenu{
