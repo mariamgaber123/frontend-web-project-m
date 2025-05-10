@@ -456,11 +456,14 @@ header img{
     .like{
       height: 690px;
       padding-top: 60px;
-      padding-left: 60px;
-      align-items: center;
+      padding-left: auto;
+      padding-right: auto;
+      /* align-items: center; */
       display: grid;
       grid-template-columns: auto auto auto auto;
-      gap: 40px 30px;
+       /* grid-template-columns: 250px 250px ; */
+        place-content: center;
+      gap: 90px ;
       
     }
     .im{
@@ -473,7 +476,7 @@ header img{
     }
     .im img{
       /* justify-content: space-between; */
-      height: 280px;
+      height: 270px;
       width: 265px;
       transition: transform 0.5s ease;
       background-color: rgba(13, 13, 13, 0.841);
@@ -489,7 +492,7 @@ header img{
       /* background:transparent; */
       position: absolute;
       bottom: 10px;
-      right: 300px;
+      right: 220px;
       /* z-index: 100; */
       cursor: pointer;
       padding: 5px;
@@ -947,16 +950,19 @@ padding-top: 2px;
  height: 1090px;
  width: auto;
  padding-top: 60px;
- /* padding-left: 60px; */
+ padding-left: auto;
+ padding-right: auto;
      /* margin-left: 140px; */
      /* margin-right: auto; */
  /* padding-right: 0px; */
  
  /* align-items: center; */
  display: grid;
- justify-content:space-evenly;
- grid-template-columns: auto auto ;
- /* gap: 40px 60px; */
+ /* justify-content:space-evenly; */
+ 
+ grid-template-columns: 250px 250px ;
+ place-content: center;
+ gap: 40px;
  
 }
 
