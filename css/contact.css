@@ -121,6 +121,7 @@ body {
 .formContact .submitBtn{
     background-color:#10846f;
     color: white;
+    width: 107%;
 }
 
 .formContact .submitBtn:hover{
@@ -203,4 +204,58 @@ body {
     .map{
         max-width: 90%;
     }
+
+}
+
+@media (max-width: 500px){
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.formContact {
+    width: 129%;
+    max-width: 630px;
+    margin: 0 auto;
+    left: -13%;
+}
+
+.formContact h1{
+    left: -18%;
+}
+
+.formContact p{
+    width: 100%;
+    grid-column: 1/-1;
+    top: -35%;
+    left: 0%;
+}
+
+.formContact .vertical-line{
+    width: 100%;
+    height: 1.5px;
+    grid-column: 2 / -1;
+    grid-row: 2/-1;
+    right: 10%;
+    top: 6%;
+}
+
+.formContact form{
+    grid-row: 4 / -1;
+    grid-column: 2 / -1;
+    top: -29%;
+    right: 14%;
+}
+
+.formContact input, .formContact textarea{
+    width: 115%;
+}
+
+.contact .map {
+    width: 129%;
+    max-width: 630px;
+    margin: 0 auto;
+    left: -13%;
+}
 }
