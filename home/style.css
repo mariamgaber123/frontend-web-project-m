@@ -945,20 +945,25 @@ padding-top: 2px;
 
 .like{
  height: 1090px;
+ width: auto;
  padding-top: 60px;
- padding-left: 60px;
-     /* margin-left: 70px; */
- padding-right: 0px;
- /* justify-content: center; */
+ /* padding-left: 60px; */
+     /* margin-left: 140px; */
+     /* margin-right: auto; */
+ /* padding-right: 0px; */
+ 
  /* align-items: center; */
  display: grid;
+ justify-content:space-evenly;
  grid-template-columns: auto auto ;
- gap: 30px 30px;
+ /* gap: 40px 60px; */
  
 }
 
 .im img{
  /* justify-content: space-between; */
+  /* justify-content:space-evenly; */
+  /* margin-left:50px ; */
  height: 250px;
  width: 285px;
 
@@ -1154,7 +1159,7 @@ left: 0;
  
   width: 350px;
   height: 480px;
-  margin-right: 190px;
+  margin-right: 170px;
 
  }
 .menuu img{
@@ -1224,7 +1229,7 @@ left: 0;
   font-size: 16px;
   font-weight: 390;
   /* height: 70%; */
-  padding-left: 18px;
+  padding-right: 48px;
   /* padding-top: 15px; */
   line-height: 1.9rem;
  
@@ -1240,7 +1245,7 @@ left: 0;
   height: 1090px;
   width: auto;
   /* padding-top: 60px; */
-  padding-left: 0px;
+  padding-left: 8px;
   align-items: center;
   display: grid;
   grid-template-columns: auto auto ;
@@ -1250,8 +1255,8 @@ left: 0;
  
  .im img{
   /* justify-content: space-between; */
-  height: 200px;
-  width: 185px;
+  height: 170px;
+  width: 165px;
  }
  .im i{
   font-size: 20px;
