@@ -71,3 +71,16 @@ document.querySelectorAll('.im i').forEach(heart => {
     }
   });
 });
+
+
+
+    window.addEventListener("scroll",function(){
+       const sec1=this.document.getElementById("sec1");
+       if(window.scrollY>50){
+        sec1.classList.add("ani");
+
+       }
+       else {
+        sec1.classList.remove("ani");
+       }
+    });
