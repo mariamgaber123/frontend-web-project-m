@@ -1140,13 +1140,15 @@ left: 0;
  .pho{
   height: 620px;
   width: 345px;
+  margin-left: 70px;
+  /* padding-left: 80px; */
  }
  .pho img{
   height: 600px;
-  width: 340px;
+  width: 270px;
   /* align-items: center; */
   padding-top: 2px;
-  
+ 
  }
  .menuu{
  
