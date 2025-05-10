@@ -119,12 +119,12 @@ body {
 }
 
 .formContact .submitBtn{
-    background-color:green;
+    background-color:#10846f;
     color: white;
 }
 
 .formContact .submitBtn:hover{
-    background-color:rgb(108, 174, 108);
+    background-color:#15a187;
     border:black;
 }
 
@@ -169,4 +169,38 @@ body {
 .footer{
     position: relative;
     top: 150px;
+}
+
+@media (max-width: 992px){
+    .contact{
+        right: 8%;
+    }
+
+    .formContact{
+        width: 90%;
+        right: 50;
+    }
+
+    .formContact textarea {
+        max-width: 250px;
+    }   
+    
+    .map{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 786px){    
+    .contact{
+        right: 8%;
+    }
+
+    .formContact{
+        width: 90%;
+        right: 50;
+    }
+
+    .map{
+        max-width: 90%;
+    }
 }
