@@ -251,13 +251,14 @@ header img{
       color: #ffffff;
       background-color: #ffffff;
      }
-     #ff{
+     .ff{
       font-size: 18px;
       color: #ffffff;
      }
-     #ii{
+     .ii{
       color: #ffffff;
      }
+   
      .sec1{
       height: 750px;
       background-color:rgba(255,189,20,255);
@@ -1318,6 +1319,15 @@ left: 0;
  .im i.liked {
   color: red;
  }
+ .ii.colore,
+ .ff.colore{
+  color:rgba(16,132,111,255);
+ }
+ .ii.colorer,
+ .ff.colorer{
+  color:rgba(16,132,111,255);
+ }
+ 
  .footer{
 
    height:1050px;

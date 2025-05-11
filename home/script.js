@@ -84,3 +84,28 @@ document.querySelectorAll('.im i').forEach(heart => {
         sec1.classList.remove("ani");
        }
     });
+     
+
+  
+   let footer = document.getElementById("footer");
+   let about = document.getElementById("about");
+  let ii=document.querySelectorAll(".ii");
+  let ff=document.querySelectorAll(".ff");
+  let observer=new IntersectionObserver(function(entries){
+    entries.forEach(entry =>{
+      if(entry.isIntersecting){
+        ii.forEach(el =>el.classList.add("colore"));
+        ff.forEach(el =>el.classList.add("colore"));
+      }
+      else {
+        ii.forEach(el =>el.classList.remove("colore"));
+        ff.forEach(el =>el.classList.remove("colore"));
+      }
+    });
+  },{threshold:0.8});
+  // observer.observe(menud);
+  observer.observe(footer);
+  observer.observe(about);
+  // observer.unobserve(lev);
+
+ 

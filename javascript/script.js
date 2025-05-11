@@ -71,3 +71,34 @@ document.querySelectorAll('.im i').forEach(heart => {
     }
   });
 });
+
+
+
+    window.addEventListener("scroll",function(){
+       const sec1=this.document.getElementById("sec1");
+       if(window.scrollY>50){
+        sec1.classList.add("ani");
+
+       }
+       else {
+        sec1.classList.remove("ani");
+       }
+    });
+     
+
+  let footer =document.getElementById("footer");
+  let ii=document.querySelectorAll(".ii");
+  let ff=document.querySelectorAll(".ff");
+  let observer=new IntersectionObserver(function(entries){
+    entries.forEach(entry =>{
+      if(entry.isIntersecting){
+        ii.forEach(el =>el.classList.add("colore"));
+        ff.forEach(el =>el.classList.add("colore"));
+      }
+      else {
+        ii.forEach(el =>el.classList.remove("colore"));
+        ff.forEach(el =>el.classList.remove("colore"));
+      }
+    });
+  },{threshold:0.8});
+  observer.observe(footer);
