@@ -130,19 +130,19 @@ body {
 }
 
 /* Only show error styles after form has been submitted */
-.was-submitted input:invalid {
+.wasSubmitted input:invalid {
   border: 2px solid red;
   box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
 }
 
-.was-submitted input:invalid + .error-message {
+.wasSubmitted input:invalid + .errorMessage {
   display: block;
   color: red;
   font-size: 0.85rem;
   margin-top: 5px;
 }
 
-.error-message {
+.errorMessage {
   display: none;
 }
 

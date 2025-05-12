@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorisation</title>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="form-title">Register</h2>
+
+      <div class="form-toggle">
+        <button id="show-register" class="active">Register</button>
+        <button id="show-login">Login</button>
+      </div>
+
+      <!-- Register Form -->
+      <form id="register-form" novalidate>
+        <div class="form-control">
+          <input type="text" id="username" placeholder="Username" required />
+          <span class="error-message" id="username-error"></span>
+        </div>
+
+        <div class="form-control">
+          <input type="email" id="reg-email" placeholder="Email" required />
+          <span class="error-message" id="reg-email-error"></span>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="reg-password"
+            placeholder="Password"
+            required
+          />
+          <span class="error-message" id="reg-password-error"></span>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="confirm-password"
+            placeholder="Confirm Password"
+            required
+          />
+          <span class="error-message" id="confirm-password-error"></span>
+        </div>
+
+        <button type="submit">Register</button>
+      </form>
+      <!-- Login Form -->
+      <form id="login-form" novalidate style="display: none">
+        <div class="form-control">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Username"
+            required
+          />
+          <span class="error-message" id="login-username-error"></span>
+        </div>
+
+        <div class="form-control">
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Password"
+            required
+          />
+          <span class="error-message" id="login-password-error"></span>
+        </div>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <script src="/javascript/register.js"></script>
+  </body>
+</html>
