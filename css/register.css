@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 * {
   box-sizing: border-box;
-  /* font-family: Arial, sans-serif; */
 }
 
 body {
@@ -14,7 +13,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode:color;
-    background-color: rgba(0, 0, 0, 0.753);
+  background-color: rgba(0, 0, 0, 0.753);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +21,7 @@ body {
   font-family: "Noto Kufi Arabic", sans-serif ;
 
 }
-.forme{
+.form{
   display:flex;
   justify-content: center;
   width:1300px ;
@@ -56,19 +55,19 @@ body {
 
 h2 {
   font-family: "Noto Kufi Arabic", sans-serif ;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #023e33;
-    font-size: 26px;
-    font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #023e33;
+  font-size: 26px;
+  font-weight: 700;
 }
 
 input {
-    padding: .8rem;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    width: 100%;
-   margin-top: 14px;
+  padding: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 14px;
 }
 
  button {
@@ -81,8 +80,8 @@ input {
   width: 100%;
   font-size: 17px;
   font-weight: 500;
-   transition: 0.4s ;
-   margin-top: 10px;
+  transition: 0.4s ;
+  margin-top: 10px;
 }
 
 button:hover {
@@ -134,4 +133,17 @@ button:hover {
 
 input.error {
   border: 1px solid red;
+}
+
+@media (max-width: 786px){
+  .container{
+    position: relative;
+    right: 25%;
+  }
+}
+
+@media (max-width: 500px){
+  .container{
+    right: 18%;
+  }
 }

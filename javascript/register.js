@@ -164,12 +164,16 @@ document.getElementById("register-form").addEventListener("submit", function (e)
       username: username.value.trim(),
       email: email.value.trim(),
       password: password.value.trim(),
-      favorites: []
     });
 
     // Update the localStorage
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("loggedInUser", username.value.trim());
+
+//change name when login
+    localStorage.setItem("usernamenav",username.value.trim());
+  document.getElementById("usernamenav").innerText = localStorage.getItem("usernamenav");
+
     alert("Registration successful!");
     window.location.href = "home/home.html";
   }
