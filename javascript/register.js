@@ -9,7 +9,7 @@ const formTitle = document.getElementById("form-title");
 registerBtn.onclick = () => {
   registerForm.style.display = "block";
   loginForm.style.display = "none";
-  formTitle.textContent = "Register";
+  formTitle.textContent = "Sign Up";
   registerBtn.classList.add("active");
   loginBtn.classList.remove("active");
 };

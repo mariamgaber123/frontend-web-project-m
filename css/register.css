@@ -1,53 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
 * {
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: #FFBD14;
+  background-image:url('/images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:color;
+    background-color: rgba(0, 0, 0, 0.753);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-}
+  font-family: "Noto Kufi Arabic", sans-serif ;
 
+}
+.forme{
+  display:flex;
+  justify-content: center;
+  width:1300px ;
+  /* height: 600px; */
+  /* grid-template: ; */
+  border-radius: 20px;
+}
+.img-form{
+  width: 520px;
+  background-image:url('/images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-blend-mode:color; */
+  background-color: rgba(0, 0, 0, 0.307);
+  /* border-radius:20px 0 0 20px ; */
+}
 .container {
-  background: white;
+  background:#ffffff;
+ /* backdrop-filter: blur(10px); */
   padding: 2rem;
-  width: 350px;
-  border-radius: 10px;
+  width: 540px;
+  /* height:574px ; */
+  /* border-radius:0 20px 20px 0; */
   box-shadow: 0 0 15px rgba(219, 153, 9, 0.1);
+  /* margin-left: 64rem; */
+   /* font-family: "Montserrat", sans-serif ; */
+  
+
 }
 
 h2 {
-    font-family: "Dancing Script";
+  font-family: "Noto Kufi Arabic", sans-serif ;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #10846f;
+    color: #023e33;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 input {
-    padding: 0.7rem;
+    padding: .8rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 20px;
     width: 100%;
+   margin-top: 14px;
 }
 
-button {
+ button {
   padding: 0.7rem;
-  background: #10846f;
+  background:  #023e33;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   width: 100%;
-  transition: background 0.3s;
+  font-size: 17px;
+  font-weight: 500;
+   transition: 0.4s ;
+   margin-top: 10px;
 }
 
 button:hover {
-  background: #15a187;
+  background: #ffffff;
+  color:  #023e33;
+  border:2px solid  #023e33 ;
+   
 }
 
 .form-toggle {
@@ -58,18 +100,22 @@ button:hover {
 
 .form-toggle button {
   flex: 1;
-  margin: 0 2px;
+  margin: 0 3px;
   background: #e9ecef;
   color: #333;
   border: none;
   padding: 0.6rem;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   transition: background 0.2s;
 }
-
+.form-toggle button:hover{
+  background: #ffffff;
+  color:  #023e33;
+ 
+}
 .form-toggle button.active {
-  background: #10846f;
+  background: #023e33;
   color: white;
 }
 
