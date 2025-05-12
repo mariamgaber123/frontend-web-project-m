@@ -84,7 +84,7 @@ header img{
    font-size: 14px;
    text-decoration: none;
    color: rgb(255, 255, 255);
-   font-weight: 700;
+   font-weight: 800;
    padding: 8px 8px;
    transition: all 0.3s ease;
    text-align: center;
@@ -92,7 +92,7 @@ header img{
    font-family: "Noto Kufi Arabic", sans-serif ;
 }
 .navbar a i{
-  font-size: 28px;
+  font-size: 25px;
   text-decoration: none;
 }
 .navbar a::after {
@@ -229,7 +229,7 @@ header img{
      }
      .iconn{
       color: hsl(0, 0%, 100%);
-      font-size: 25px;
+      font-size: 27px;
       display: flex;
       /* justify-content: space-between; */
       align-items: center;
@@ -241,7 +241,7 @@ header img{
       width: 40px;
       right: 60px;
       margin-left: 400px;
-      padding-top: 180px;
+      padding-top: 200px;
       padding-left: 200px;
       position: fixed;
       z-index: 30;
@@ -252,13 +252,15 @@ header img{
       background-color: #ffffff;
      }
      .ff{
-      font-size: 18px;
+      font-size: 11px;
       color: #ffffff;
      }
      .ii{
       color: #ffffff;
      }
-   
+      .iconn .ff{
+        font-size: 20px;
+      }
      .sec1{
       height: 750px;
       background-color:rgba(255,189,20,255);
@@ -813,6 +815,7 @@ width: auto;
   /* transition: .5s ease; */
  
 }
+
 .icon{
    display: inline-flex;
     
@@ -820,7 +823,12 @@ width: auto;
  .icon #close{
    display:none ;
  }
- 
+  
+
+.navbar .user i{
+  vertical-align: middle;
+  font-size: 34px;
+}
  #check:checked~.icon #close{
    display: block;
   
@@ -838,6 +846,9 @@ width: auto;
    overflow: hidden;
   
 }
+.navbar .user{
+  font-size: 19px;
+}
 
  #check:checked~.navbar{
    height: 25.8rem;
@@ -850,6 +861,7 @@ width: auto;
    display: block;
   
 }
+
 
 .iconn a{
  margin-left: 70px;
@@ -1149,6 +1161,7 @@ left: 0;
   padding-top: 210px;
   font-size: 20px;
  }
+ 
  .text{
   margin-right: 30px;
   padding-top: 24%;
