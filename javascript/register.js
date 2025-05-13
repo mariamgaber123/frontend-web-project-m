@@ -222,18 +222,22 @@ document.getElementById("Reset-form").addEventListener("submit", function (e) {
     passworddError.style.display = "none";
   }
 
- function reset(emaill,passwordd){
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-    const userIndex = users.findIndex(
-    user => user.email === emaill
-   );
-  if (userIndex === -1) {
-    alert("User not found.");
-    return;
+  if (valid) {
+    reset(emaill.value.trim(), passwordd.value.trim());
   }
-    users[userIndex].password = passwordd;
+
+  function reset(email, newPassword) {
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userIndex = users.findIndex(user => user.email === email);
+
+    if (userIndex === -1) {
+      alert("User not found.");
+      return;
+    }
+
+    users[userIndex].password = newPassword;
     localStorage.setItem("users", JSON.stringify(users));
     alert("Password reset successfully.");
-    window.location.href = "#";
+    window.location.href = "home/home.html";
   }
 });
