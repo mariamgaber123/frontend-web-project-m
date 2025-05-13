@@ -135,7 +135,23 @@ button:hover {
 input.error {
   border: 1px solid red;
 }
+.forget{
+  /* background-color: #333; */
+  text-align: center;
+  margin-top: 12px;
 
+}
+.forget a{
+   color:#023e33 ;
+   font-size: 16px;
+   cursor: pointer;
+   text-decoration: none;
+   
+ }
+ .forget a:hover{
+  text-decoration: 2px underline ;
+  transition: .2s;
+ }
 @media (max-width: 786px){
   .form{
     width: auto;

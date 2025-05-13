@@ -1,26 +1,38 @@
 // Form switch buttons
-const registerBtn = document.getElementById("show-register");
 const loginBtn = document.getElementById("show-login");
-const registerForm = document.getElementById("register-form");
+const registerBtn = document.getElementById("show-register");
+const forgetlink=document.getElementById("fo");
 const loginForm = document.getElementById("login-form");
+const registerForm = document.getElementById("register-form");
+const resetForm=document.getElementById("Reset-form");
 const formTitle = document.getElementById("form-title");
-
+const formtoggle=document.getElementById("form-toggle");
 // Switch logic
+loginBtn.onclick = () => { 
+  loginForm.style.display = "block";
+  registerForm.style.display = "none";
+  resetForm.style.display ="none";
+  formTitle.textContent = "Login";
+  loginBtn.classList.add("active");
+  registerBtn.classList.remove("active");
+  
+};
 registerBtn.onclick = () => {
   registerForm.style.display = "block";
   loginForm.style.display = "none";
+  resetForm.style.display ="none";
   formTitle.textContent = "Sign Up";
   registerBtn.classList.add("active");
   loginBtn.classList.remove("active");
 };
 
-loginBtn.onclick = () => {
+forgetlink.onclick = () =>{
+  loginForm.style.display = "none";
   registerForm.style.display = "none";
-  loginForm.style.display = "block";
-  formTitle.textContent = "Login";
-  loginBtn.classList.add("active");
-  registerBtn.classList.remove("active");
-};
+  resetForm.style.display ="block";
+  formTitle.textContent = "Reset Password";
+  formtoggle.style.display="none";
+}
 
 // Login form validation
 document.getElementById("login-form").addEventListener("submit", function (e) {
@@ -176,5 +188,52 @@ document.getElementById("register-form").addEventListener("submit", function (e)
 
     alert("Registration successful!");
     window.location.href = "home/home.html";
+  }
+});
+
+// Reset form validation
+document.getElementById("Reset-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+  let valid = true;
+  const emaill = document.getElementById("res-email");
+  const passwordd = document.getElementById("res-password");
+  const emaillError = document.getElementById("res-email-error");
+  const passworddError = document.getElementById("res-password-error");
+
+  // Email validation
+  if (!emaill.value.trim()) {
+    emaill.classList.add("error");
+    emaillError.textContent = "Email is required.";
+    emaillError.style.display = "block";
+    valid = false;
+  } else {
+    emaill.classList.remove("error");
+    emaillError.style.display = "none";
+  }
+
+  // Password validation
+  if (!passwordd.value.trim()) {
+    passwordd.classList.add("error");
+    passworddError.textContent = "Password is required.";
+    passworddError.style.display = "block";
+    valid = false;
+  } else {
+    passwordd.classList.remove("error");
+    passworddError.style.display = "none";
+  }
+
+ function reset(emaill,passwordd){
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userIndex = users.findIndex(
+    user => user.email === emaill
+   );
+  if (userIndex === -1) {
+    alert("User not found.");
+    return;
+  }
+    users[userIndex].password = passwordd;
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("Password reset successfully.");
+    window.location.href = "#";
   }
 });
