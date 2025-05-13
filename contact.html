@@ -44,7 +44,7 @@
           <a href="/home/menu.html">MENU</a>
           <a href="/home/catering.html">CATERING</a>
           <a href="/contact.html">CONTACT</a>
-          <a href="#" class="user"><i class='bx bxs-user-circle' ></i> <span> Log in</span></a>
+          <a href="#" class="user"><i class='bx bxs-user-circle' ></i> <span id="usernamenav"> Log in</span></a>
         </nav>
       </header>
       <div class="iconn" >
@@ -183,5 +183,14 @@
 
     <script src="/home/script.js"></script>
     <script src="/javascript/contact.js"></script>
+
+    <script> 
+   window.addEventListener("DOMContentLoaded", () => {
+     const username = localStorage.getItem("usernamenav");
+     if (username) {
+       document.getElementById("usernamenav").textContent = username;
+      }
+    });
+  </script> 
   </body>
 </html>
