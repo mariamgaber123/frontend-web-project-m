@@ -24,10 +24,11 @@ body {
 .form{
   display:flex;
   justify-content: center;
-  width:1300px ;
+  width:auto ;
   /* height: 600px; */
   /* grid-template: ; */
   border-radius: 20px;
+  box-shadow:4px 3px 10px black ;
 }
 .img-form{
   width: 520px;
@@ -137,12 +138,13 @@ input.error {
 
 @media (max-width: 786px){
   .form{
-    width: 700px;
+    width: auto;
+    box-shadow:none ;
   }
   .container{
     position: relative;
     /* right: 25%; */
-  width: 350px;
+    width: 350px;
   }
   .img-form{
     width:350px ;
