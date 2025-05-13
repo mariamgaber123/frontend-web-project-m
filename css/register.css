@@ -136,14 +136,65 @@ input.error {
 }
 
 @media (max-width: 786px){
+  .form{
+    width: 700px;
+  }
   .container{
     position: relative;
-    right: 25%;
+    /* right: 25%; */
+  width: 350px;
+  }
+  .img-form{
+    width:350px ;
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 540px){
+  .form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .container{
-    right: 5%;
+    position: absolute;
+     width: 250px;
+  }
+  .img-form{
+    width:320px ;
+    height:730px;
+  }
+}
+
+
+@media (max-width: 400px){
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    position: absolute;
+     width: 200px;
+     
+  }
+  .img-form{
+    width:250px ;
+    height:610px;
+  }
+  button{
+    font-size: 12px;
+  }
+  input{
+   font-size: 12px;
+  }
+  .error-message{
+    font-size: 10px;
+     margin-top:0;
+  }
+  .form-control{
+    margin-bottom: 1px;
   }
 }
