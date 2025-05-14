@@ -86,7 +86,9 @@ document.querySelectorAll('.im i').forEach(heart => {
     });
      
 
-  let footer =document.getElementById("footer");
+  
+   let footer = document.getElementById("footer");
+   let about = document.getElementById("about");
   let ii=document.querySelectorAll(".ii");
   let ff=document.querySelectorAll(".ff");
   let observer=new IntersectionObserver(function(entries){
@@ -101,4 +103,9 @@ document.querySelectorAll('.im i').forEach(heart => {
       }
     });
   },{threshold:0.8});
+  // observer.observe(menud);
   observer.observe(footer);
+  observer.observe(about);
+  // observer.unobserve(lev);
+
+ 
