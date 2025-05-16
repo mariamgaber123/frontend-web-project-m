@@ -1,3 +1,28 @@
+/////////////////////////user//////////////////////////////////////
+let prof=document.getElementById("profile");
+function VisableMenue(){
+  prof.classList.toggle("open");
+}
+function logout() {
+    localStorage.removeItem('usernamenav');
+    window.location.href = 'home.html';
+  }
+   function VisableMenue() {
+    const profile = document.getElementById("profile");
+    profile.classList.toggle("active"); 
+  }
+   document.addEventListener("click", function (e) {
+    const profile = document.getElementById("profile");
+    const icon = document.querySelector(".onclick");
+
+    if (!profile.contains(e.target) && !icon.contains(e.target)) {
+      profile.classList.remove("active");
+    }
+  });
+////////////////////////user//////////////////////////////
+
+
+/////////////////////// heading visibility/////////////////////////////////
 window.addEventListener("scroll", () =>{
  const textid=document.getElementById("taxtid");
  const scrollY=window.scrollY;
@@ -10,7 +35,9 @@ window.addEventListener("scroll", () =>{
  }
   textid.style.opacity=opacity;
  });
-
+/////////////////////// heading visibility/////////////////////////////////
+ 
+///////////////////////////header scorll//////////////////////////////////////
  let lastScrollY = window.scrollY;
  window.addEventListener("scroll",function (){
   let header =document.getElementById("hmm");
@@ -31,8 +58,7 @@ window.addEventListener("scroll",function (){
      header.classList.remove("movvedd");
     }
 });
-// let lastScrollY = window.scrollY;
-// let lastScrollY = window.scrollY; // لازم نعرفها برا الحدث
+
 
 window.addEventListener("scroll", () => {
   const header = document.getElementById("hmm");
@@ -41,25 +67,18 @@ window.addEventListener("scroll", () => {
   const mainBottom = mainElement.getBoundingClientRect().bottom;
 
   if (window.scrollY > lastScrollY && mainBottom <= 190) {
-    // لو نازلة لتحت و main خرجت من الشاشة تمامًا
+
     header.classList.add("moove");
   } else {
-    // لو طالعة لفوق أو main لسه ظاهر جزء منه
+    
     header.classList.remove("moove");
   }
 
   lastScrollY = window.scrollY;
 });
-// window.addEventListener("scroll",()=>{
-//   const sec11=document.querySelectorAll(".sec1")
-//     sec11.forEach((sec1)=>{
-//       const sectop =sec1.getBoundingClientRect().top;
-//       if(sectop<window.innerHeight-100){
-//         sec1.classList.add("show");
-//       }
-//     })
-// })
+///////////////////////////header scorll//////////////////////////////////////
 
+/////////////////////////////like///////////////////////////////
 document.querySelectorAll('.im i').forEach(heart => {
   heart.addEventListener('click', () => {
     if (heart.classList.contains('bx-heart')) {
@@ -72,8 +91,9 @@ document.querySelectorAll('.im i').forEach(heart => {
   });
 });
 
+/////////////////////////////like///////////////////////////////
 
-
+////////////////////////////sec2 animation///////////////////////////////////
     window.addEventListener("scroll",function(){
        const sec1=this.document.getElementById("sec1");
        if(window.scrollY>50){
@@ -85,8 +105,10 @@ document.querySelectorAll('.im i').forEach(heart => {
        }
     });
      
+////////////////////////////sec2 animation///////////////////////////////////
 
-  
+
+//////////////////////////colored icon when responsive/////////////////////////////////////////
    let footer = document.getElementById("footer");
    let about = document.getElementById("about");
   let ii=document.querySelectorAll(".ii");
@@ -102,10 +124,11 @@ document.querySelectorAll('.im i').forEach(heart => {
         ff.forEach(el =>el.classList.remove("colore"));
       }
     });
-  },{threshold:0.8});
-  // observer.observe(menud);
+  },{threshold:0.4});
+
   observer.observe(footer);
   observer.observe(about);
-  // observer.unobserve(lev);
+//////////////////////////colored icon when responsive/////////////////////////////////////////
 
+  
  

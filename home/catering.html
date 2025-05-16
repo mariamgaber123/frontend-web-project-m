@@ -53,8 +53,24 @@
           <a href="menu.html">MENU</a>
           <a href="catering.html">CATERING</a>
           <a href="/contact.html">CONTACT</a>
-          <a href="/register.html" class="user"><i class='bx bxs-user-circle' ></i> <span id="usernamenav"> Log in</span></a>
-        </nav>
+ <!---------------------- YourProfile start -------------------------->
+           <!-- <a href=""  ><i class='bx bxs-user-circle' ></i> <span id="usernamenav"> Log in</span></a> -->
+          <a class="onclick" onclick="VisableMenue()">
+       <i class='bx bxs-user-circle'></i></a>
+        <div class="YourProfile" id="profile">
+         <div class="sub-menu">
+        <div class="userInfo">
+      <i class='bx bxs-user-circle'></i>
+      <a href="/register.html" class="loginuser" id="usernamenav">Log in</a>
+    </div> <hr>
+      <span class="lgout">
+       <a href="#" class="logout" onclick="logout()">
+        <i class='bx bx-log-out'></i> Logout
+               </a>
+           </span>
+             </div>
+           </div>
+          <!---------------------- YourProfile end -------------------------->        </nav>
       </header>
     </div>
     <section class="catering" id="catering">
@@ -299,13 +315,22 @@
     <script src="/javascript/catering.js"></script>
 
 
-    <script> 
+    
+  <script> 
    window.addEventListener("DOMContentLoaded", () => {
      const username = localStorage.getItem("usernamenav");
      if (username) {
        document.getElementById("usernamenav").textContent = username;
       }
     });
+    let prof=document.getElementById("profile");
+function VisableMenue(){
+  prof.classList.toggle("open");
+}
+function logout() {
+    localStorage.removeItem('usernamenav');
+    window.location.href = 'home.html';
+  }
   </script> 
   </body>
 </html>
