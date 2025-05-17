@@ -52,17 +52,17 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
   // Username validation
   if (!usernameInput.value.trim()) {
-    usernameInput.classList.add("error"); // Add red border
-    usernameError.textContent = "Username is required."; // Error message
-    usernameError.style.display = "block"; // Show error message
+    usernameInput.classList.add("error");
+    usernameError.textContent = "Username is required.";
+    usernameError.style.display = "block";
     valid = false;
   }
 
   // Password validation
   if (!passwordInput.value.trim()) {
-    passwordInput.classList.add("error"); // Add red border
-    passwordError.textContent = "Password is required."; // Error message
-    passwordError.style.display = "block"; // Show error message
+    passwordInput.classList.add("error");
+    passwordError.textContent = "Password is required.";
+    passwordError.style.display = "block";
     valid = false;
   }
 
@@ -80,7 +80,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
       localStorage.setItem("loggedInUser", matchedUser.username);
       window.location.href = "home/home.html";
     } else {
-      // If credentials are incorrect, add red styles and error messages
+      
       usernameInput.classList.add("error");
       passwordInput.classList.add("error");
       usernameError.textContent = "Invalid username or password.";
@@ -171,7 +171,6 @@ document.getElementById("register-form").addEventListener("submit", function (e)
       return;
     }
 
-    // Add the new user to the list and update localStorage
     users.push({
       username: username.value.trim(),
       email: email.value.trim(),
@@ -179,17 +178,14 @@ document.getElementById("register-form").addEventListener("submit", function (e)
     });
      alert("Registration successful!");
     window.location.href = "register.html";
-    // Update the localStorage
     localStorage.setItem("users", JSON.stringify(users));
     localStorage.setItem("loggedInUser", username.value.trim());
 
-   //change name when login
     localStorage.setItem("usernamenav",username.value.trim());
     document.getElementById("usernamenav").innerText = localStorage.getItem("usernamenav");
   }
 });
 
-// Reset form validation
 document.getElementById("Reset-form").addEventListener("submit", function (e) {
   e.preventDefault();
   let valid = true;

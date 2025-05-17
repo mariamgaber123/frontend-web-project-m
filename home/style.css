@@ -198,8 +198,8 @@ display: block;
  }
 #hmm.moove {
   opacity: 0;
- visibility: hidden;
- transform: translateY(-100%);
+  visibility: hidden;
+  transform: translateY(-100%);
 
  }
 
@@ -216,14 +216,14 @@ display: block;
 //////////////////////////////////////////////////////////*/
   .main{
    height: 1005px;
-   background-image: url('images/11062b_ffb14443f99d462b91fd5bc7591e02d5~mv2_d_4752_3168_s_4_2.avif');
+    background-image: url('images/11062b_ffb14443f99d462b91fd5bc7591e02d5~mv2_d_4752_3168_s_4_2.avif');
     background-blend-mode:color;
     background-color: rgba(0, 0, 0, 0.392);
     background-repeat: no-repeat ;
     background-size: cover; 
     background-attachment: fixed;
     position: relative;
-   display:block;
+    display:block;
 }
      .ttt1{
       transform: rotate(354deg);
@@ -235,7 +235,7 @@ display: block;
       align-items: center;
       text-align: center;
       padding-top: 200px;
-      font-family: "Dancing Script", cursive;
+      font-family: "Dancing Script",cursive;
       font-weight:500;
       position: relative;
       object-fit: cover;
@@ -312,15 +312,15 @@ display: block;
       transition: all 1s ease;
      }
       #sec1.ani .pho{
-             animation: fadeIn 1.6s ease-in forwards;
+        animation: fadeIn 1.6s ease-in forwards;
 
       }
       #sec1.ani .menuu{
-      animation: fadeIn .7s ease-out forwards;
+        animation: fadeIn .7s ease-out forwards;
 
       }
       #sec1.ani .menuu img{
-            animation: fadeIn 2s ease forwards;
+        animation: fadeIn 2s ease forwards;
 
       }
     .pho{
@@ -378,7 +378,7 @@ display: block;
       width: 130px;
       height: 71px;
       margin-left: 470px;
-     margin-top: 0px;
+      margin-top: 0px;
       display:inline-flex;
       right: 0;
 
@@ -387,7 +387,7 @@ display: block;
       display: flex;
       justify-content: space-between;
       align-items: center;
-       padding-top: 0px;
+      padding-top: 0px;
      }
 
     .textt{
@@ -455,7 +455,7 @@ display: block;
     .sec22{
       width: 690px;
       height: 500px;
-       color: rgba(16,132,111,255);
+      color: rgba(16,132,111,255);
      text-align: center;
      background-image:url("images/2cc931dc14e0183c1856195619d2b7ec.png");
      background-repeat: no-repeat;
@@ -791,6 +791,7 @@ width: auto;
   font-size: 16px;
  }
 }
+
 @media (max-width: 768px) {
  
   .navbar{
@@ -843,7 +844,7 @@ width: auto;
  }
 #check:checked~.navbar a{
    display: block;
-  
+   
 } 
  
 .iconn a{

@@ -109,6 +109,7 @@
         padding: 50px 40px;  
         height: auto;
     }
+    .menu{background-repeat: repeat-y;}
     .tmenu{
         font-size: 30px;}
         .mtt{
