@@ -244,6 +244,10 @@
        document.getElementById("usernamenav").textContent = username;
       }
     });
+    function logout() {
+    localStorage.removeItem('usernamenav');
+    window.location.href = 'home.html';
+  }
    </script> 
 
   </body>

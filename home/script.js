@@ -3,10 +3,7 @@ let prof=document.getElementById("profile");
 function VisableMenue(){
   prof.classList.toggle("open");
 }
-function logout() {
-    localStorage.removeItem('usernamenav');
-    window.location.href = 'home.html';
-  }
+
    function VisableMenue() {
     const profile = document.getElementById("profile");
     profile.classList.toggle("active"); 
