@@ -7,18 +7,18 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/home/style.css" />
+    <link rel="stylesheet" href="home/style.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
     />
     <link
       rel="stylesheet"
-      href="/home/font-awesome-4.7.0/css/font-awesome.min.css"
+      href="home/font-awesome-4.7.0/css/font-awesome.min.css"
     />
 
     <link rel="icon" href="images/icon.png" type="image/png" />
-    <link rel="stylesheet" href="/css/about.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <title>About us</title>
   </head>
   <body>
@@ -37,11 +37,11 @@
           <i class="bx bx-x" id="close"></i>
         </label>
         <nav class="navbar" id="navbar">
-          <a href="/home/home.html">HOME</a>
-          <a href="/about.html">ABOUT</a>
-          <a href="/home/menu.html">MENU</a>
-          <a href="/home/catering.html">CATERING</a>
-          <a href="/contact.html">CONTACT</a>
+          <a href="home/home.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="home/menu.html">MENU</a>
+          <a href="home/catering.html">CATERING</a>
+          <a href="contact.html">CONTACT</a>
           <!---------------------- YourProfile start -------------------------->
            <!-- <a href=""  ><i class='bx bxs-user-circle' ></i> <span id="usernamenav"> Log in</span></a> -->
          <a class="onclick" onclick="VisableMenue()">
@@ -50,7 +50,7 @@
          <div class="sub-menu">
         <div class="userInfo">
       <i class='bx bxs-user-circle'></i>
-      <a href="/register.html" class="loginuser" id="usernamenav">Log in</a>
+      <a href="register.html" class="loginuser" id="usernamenav">Log in</a>
     </div> <hr>
       <span class="lgout">
        <a href="#" class="logout" onclick="logout()">
@@ -154,7 +154,7 @@
       </div>
     </footer>
 
-   <script src="/home/script.js"></script>
+   <script src="home/script.js"></script>
   <script> 
    window.addEventListener("DOMContentLoaded", () => {
      const username = localStorage.getItem("usernamenav");
@@ -164,7 +164,7 @@
     });
    function logout() {
     localStorage.removeItem('usernamenav');
-    window.location.href = '/home/home.html';
+    window.location.href = 'home/home.html';
   }
   </script>
   </body>
