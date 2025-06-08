@@ -846,17 +846,23 @@ width: auto;
    display: block;
    
 } 
- 
+ .sub-menu .logout{
+      display: flex;
+    align-content:flex-start;
+    text-align: left;
+   
+}
 .iconn a{
  margin-left: 70px;
 }
+
  body{
         overflow-x: hidden;
         overflow-y: scroll;
   }
 .main{
    height:931px;
-  width: 768px;
+   width: 768px;
    background-size: cover; 
    background-attachment: fixed;
    position: relative;
