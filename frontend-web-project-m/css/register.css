@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url('../images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-attachment: scroll;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode:color;
+  background-color: rgba(0, 0, 0, 0.753);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Noto Kufi Arabic", sans-serif ;
+
+}
+.form{
+  display:flex;
+  justify-content: center;
+  width:auto ;
+  /* height: 600px; */
+  /* grid-template: ; */
+  border-radius: 20px;
+  box-shadow:4px 3px 10px black ;
+}
+.img-form{
+  width: 520px;
+  background-image:url('../images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-blend-mode:color; */
+  background-color: rgba(0, 0, 0, 0.307);
+  /* border-radius:20px 0 0 20px ; */
+}
+.container {
+  background:#ffffff;
+ /* backdrop-filter: blur(10px); */
+  padding: 2rem;
+  width: 540px;
+  /* height:574px ; */
+  /* border-radius:0 20px 20px 0; */
+  box-shadow: 0 0 15px rgba(219, 153, 9, 0.1);
+  /* margin-left: 64rem; */
+   /* font-family: "Montserrat", sans-serif ; */
+  
+
+}
+
+h2 {
+  font-family: "Noto Kufi Arabic", sans-serif ;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #023e33;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+input {
+  padding: .8rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 14px;
+}
+
+ button {
+  padding: 0.7rem;
+  background:  #023e33;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.4s ;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ffffff;
+  color:  #023e33;
+  border:2px solid  #023e33 ;
+   
+}
+
+.form-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.form-toggle button {
+  flex: 1;
+  margin: 0 3px;
+  background: #e9ecef;
+  color: #333;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form-toggle button:hover{
+  background: #ffffff;
+  color:  #023e33;
+ 
+}
+.form-toggle button.active {
+  background: #023e33;
+  color: white;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+input.error {
+  border: 1px solid red;
+}
+.forget{
+  /* background-color: #333; */
+  text-align: center;
+  margin-top: 12px;
+
+}
+.forget a{
+   color:#023e33 ;
+   font-size: 16px;
+   cursor: pointer;
+   text-decoration: none;
+   
+ }
+ .forget a:hover{
+  text-decoration: 2px underline ;
+  transition: .2s;
+ }
+@media (max-width: 786px){
+  .form{
+    width: auto;
+    box-shadow:none ;
+  }
+  .container{
+    position: relative;
+    /* right: 25%; */
+    width: 350px;
+  }
+  .img-form{
+    width:350px ;
+  }
+}
+
+@media (max-width: 540px){
+  .form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    position: absolute;
+     width: 250px;
+  }
+  .img-form{
+    width:320px ;
+    height:730px;
+  }
+}
+
+
+@media (max-width: 400px){
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    position: absolute;
+     width: 200px;
+     
+  }
+  .img-form{
+    width:250px ;
+    height:610px;
+  }
+  button{
+    font-size: 12px;
+  }
+  input{
+   font-size: 12px;
+  }
+  .error-message{
+    font-size: 10px;
+     margin-top:0;
+  }
+  .form-control{
+    margin-bottom: 1px;
+  }
+}

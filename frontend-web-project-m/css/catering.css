@@ -1,0 +1,298 @@
+.catering{
+    
+    margin: 0;
+    box-sizing: border-box;
+    background-color:#FFBD14 ;
+    min-height: 100vh;
+ padding: 0;
+}
+.allOur{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+/* padding: 50px 0; */
+    align-items: center;
+    justify-content: center;
+}
+.OurHeader{
+    
+    font-size: 5vmin;
+     font-family: "Dancing Script", cursive;
+     transform: rotate(-8deg);
+     color: #10846f;
+     font-weight: 600;
+}
+.OurCatering{
+  
+    /* box-shadow: 0 4px 12px rgba(255, 189, 20, 0.5); */
+    box-shadow: 
+    -10px 10px  20px -3px rgba(251, 110, 2, 0.6);
+display: flex;
+flex-direction: column;
+    color: #10846f;
+   justify-content: center;
+    align-items: center;
+    width: 90vmin;
+    height:60vmin;
+    background-color: #fff;
+    font-weight: 400;
+    padding-bottom: 5vmin ;
+}
+.OurParg{
+     font-size:2vmin;
+    text-align: center;
+    display: inline-block;
+    width: 70vmin;
+ /* font-size: 15px; */
+ font-family: "Quicksand", sans-serif;
+    color: #10846f;
+    line-height: 1.8em;
+}
+.OurCatering .header{
+ font-size:2.5vmin;
+    text-transform:uppercase;
+    display: block;
+    padding: 3vmin 0;
+}
+/* -----------------NavCatering Start ------------------- */
+.catering ul{
+    
+    list-style:none ;
+}
+.catering #navPlates{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+.catering #navPlates li{
+    user-select: none;
+    /* transition: transform 0.1s ease; */
+    cursor: pointer;
+    font-size: 2.3vmin;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    border-radius: 3px;
+    background-color: #fff;
+    padding: 10px;
+    width: 6em;
+color: #10846f;
+}
+.catering #navPlates li:active{
+    transform: scale(0.96);
+ 
+}
+.catering  #navPlates li.list-act{
+    background-color: #10846f;
+    color: #fff;
+}
+#ContentPlates li{
+    display: none;
+}
+ 
+#ContentPlates li.content-act{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------NavCatering End------------------- */
+.allPlates{
+    box-sizing: border-box;
+   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ .plates{
+    box-sizing: border-box;
+    width: auto;
+    /* max-width: 100%; */
+    height: auto;
+    display: flex;
+    /* display: grid; */
+     gap: 40px;
+    place-items: center;
+     justify-content: center;
+      align-items: stretch;
+      margin-bottom: 50px;
+ }
+  
+.PlatesImages img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+ /* display: block; */
+    /* max-width: 80%; */
+    transition: transform 0.3s ease;
+}
+.PlatesImages img:hover{
+ transform: scale(1.1);
+}
+.PlatesImages {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    max-width: 400px;
+    /* background-color: #10846f; */
+    position: relative;
+    overflow: hidden;
+}
+.PlatesImages:hover{
+    transform: scale(1.04);
+}
+
+.PlatesImages .overlay{
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0; 
+    pointer-events: none;
+    min-width:60%;
+    min-height: 60%;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.873);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* word-wrap: break-word; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px;
+ 
+}
+.PlatesImages:hover .overlay {
+    opacity: 1;
+    /* background-color: rgb(255, 255, 255); */
+    
+  }
+ 
+ 
+  .offer-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #e63946;  
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 1.8vmin;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 2;
+    /* opacity: 0;
+    transition: opacity 0.4s ease; */
+  }
+  
+  /* .PlatesImages:hover .offer-badge {
+    transform: scale(1.07);
+  } */
+
+.overlay h3{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vmin;
+    font-family: "Quicksand", sans-serif;
+    color: #10846f;
+    text-transform: uppercase;
+    font-weight: 550;
+    
+}
+.overlay p{
+   
+     
+    padding: 0;
+    font-weight: 400;
+    
+    font-family: "Quicksand", sans-serif;
+    font-size: 2vmin;
+     
+    text-align: center;
+    color: #10846f;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.allPlates a .btncontact{
+    font-family: "Quicksand", sans-serif;
+    width: 21vmin;
+    height: 7vmin;
+background-color: #10846f;
+color: #fff;
+font-size: 2.5vmin;
+border: none;
+margin: 50px 0;
+border-radius: 2px;
+cursor: pointer;
+font-weight:500 ;
+
+}
+.allPlates a .btncontact:hover{
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    color: #10846f;
+    background-color: #fff;
+
+}
+.allPlates a .btncontact:active{
+    transform: scale(0.96);
+}
+.allPlates a .btnrv{
+    font-family: "Quicksand", sans-serif;
+    width: 21vmin;
+    height: 7vmin;
+background-color: #10846f;
+color: #fff;
+font-size: 2.5vmin;
+border: none;
+margin: 50px 0;
+border-radius: 2px;
+cursor: pointer;
+font-weight:500 ;
+}
+.allPlates a .btnrv:hover{
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+    color: #10846f;
+    background-color: #fff;
+
+}
+.allPlates a .btnrv:active{
+    transform: scale(0.96);
+}
+ 
+@media (max-width: 768px){
+    .allOur{
+        height: 80vh;
+    }
+    .plates{
+        flex-wrap: wrap;
+    }
+    .catering #navPlates{
+        flex-wrap: wrap;
+    }
+   .catering #navPlates li ,.allPlates a .btncontact{
+        font-size: 3vmin;
+    }
+    .overlay p,h3,  .offer-badge{
+        font-size: 2.3vmin;
+    }
+}

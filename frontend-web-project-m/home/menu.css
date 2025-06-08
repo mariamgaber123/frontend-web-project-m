@@ -1,0 +1,178 @@
+.bodym{
+  margin: 0px;
+  line-height: 30px;
+}
+.menu{
+    background-image: url(img/b2ab79ec1411412793f037051441b111.jpg);
+    background-repeat: no-repeat;
+   background-size: 100%;
+   color: rgb(16, 132, 111);
+   width: 100%;
+   overflow-x: hidden;
+}
+
+
+.menud{
+    margin: 100px 80px;
+    margin-top: 160px;
+    background-color: white;
+    padding: 90px 130px;
+    height:auto;
+}
+.tmenu{
+   
+    text-align: center; 
+   font-size: 40px;
+   font-family: "Dancing Script", cursive;
+   font-optical-sizing: auto;
+   /* font-weight: <weight>; */
+   font-style: normal;
+   padding-bottom: 50px;
+    /* gap :70px; */
+}
+.md{
+   display: flex;
+   direction: row;
+   justify-content: space-between;
+   /* align-items: center; */
+   gap :100px;
+   padding-bottom: 15px;
+
+  /* word-spacing: 10px; */
+}
+.mtt{
+    flex: 1;
+    padding-top: 3px;
+   padding-bottom: 2px;
+ }
+.mtp{
+    margin-left: auto;
+}
+ 
+.mt{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  font-family: 'Barlow Condensed';
+  src: url('fonts/BarlowCondensed-Regular.woff2') format('woff2'),
+  url('fonts/BarlowCondensed-Regular.woff') format('woff');
+  font-size: 28px;
+  padding-bottom: 5px;
+}
+.mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  gap :70px;
+  padding-top:20px ;
+  
+  /* word-spacing: 10px; */
+   
+}
+.mtdr2{
+    /* padding-right: 896px; */
+}
+.mtd{
+    font-family: 'Nunito', sans-serif;
+
+    
+    font-style: normal; 
+    font-size: 15px;
+}
+.mtt3{
+/* padding-right: 908.8px; */
+}
+.mtdr{
+    /* padding-right: 944px; */
+}
+
+@media(max-width:800px){
+    .bodym{
+        background-repeat: repeat-y;
+        line-height: 25px;
+        background-size: auto;
+        
+    }
+    .menud{
+        margin: 140px 50px;
+        margin-bottom: 40px;
+        padding: 50px 40px;  
+        height: auto;
+    }
+    .menu{background-repeat: repeat-y;}
+    .tmenu{
+        font-size: 30px;}
+        .mtt{
+
+            /* padding-right: 420px; */
+        }
+        .mtt2{
+            /* padding-right: 410px; */
+           
+        }
+        .mt{
+            font-size: 23px;
+            padding-bottom: 5px;
+        }
+        .mtdr2{
+            /* padding-right: 395px; */
+        }
+        .mtt3{
+            /* padding-right: 80px; */
+        }
+        .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+            font-size: 16px;
+            padding-top:10px ;
+        }
+        .mtdr{
+            /* padding-right: 430px; */
+        }
+        .mtd{
+            font-size: 12px;
+        }
+}
+@media(max-width:600px){
+    .bodym{
+        line-height: 20px;
+    }
+    .menud{
+        margin: 20px 20px;
+        height: 900px;
+        height: auto;
+        /* padding: 20px 50px;   */
+    }
+    .tmenu{
+        font-size: 30px;}
+        .mtt{
+           font-size: 18px;
+            /* padding-right: 275px; */
+        }
+        .mtt2{
+            /* padding-right: 265px; */
+           
+        }
+        .mt{
+            font-size: 23px;
+        }
+        .mtdr2{
+            /* padding-right: 250px; */
+        }
+        .mtt3{
+            /* padding-right: 80px; */
+        }
+        .mtt,.mtt2,.mtt3,.mtdr,.mtp,.mtdr2{
+            font-size: 16px;
+        }
+        .mtdr{
+            /* padding-right: 290px; */
+        }
+        .mtd{
+            /* font-size: 12px; */
+        }
+}
+

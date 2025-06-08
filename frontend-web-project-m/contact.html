@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+  />
+  <link rel="stylesheet" href="home/font-awesome-4.7.0/css/font-awesome.min.css" />
+
+  <!-- <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="icon" href="images/icon.png" type="image/png" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <!-- ////////////////////////////////Header section ////////////////////////////////-->
+    <div id="hM">
+      <header id="hmm">
+        <div id="headdd">
+          <img
+            src="images/Screenshot 2025-04-30 171841-pica (2) (1).png"
+            alt="logo"
+          />
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="icon">
+          <i class="bx bx-menu" id="menu"></i>
+          <i class="bx bx-x" id="close"></i>
+        </label>
+        <nav class="navbar" id="navbar">
+          <a href="home/home.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="home/menu.html">MENU</a>
+          <a href="home/catering.html">CATERING</a>
+          <a href="contact.html">CONTACT</a>
+ <!---------------------- YourProfile start -------------------------->
+           <!-- <a href=""  ><i class='bx bxs-user-circle' ></i> <span id="usernamenav"> Log in</span></a> -->
+          <a class="onclick" onclick="VisableMenue()">
+       <i class='bx bxs-user-circle'></i></a>
+        <div class="YourProfile" id="profile">
+         <div class="sub-menu">
+        <div class="userInfo">
+      <i class='bx bxs-user-circle'></i>
+      <a href="register.html" class="loginuser" id="usernamenav">Log in</a>
+    </div> <hr>
+      <span class="lgout">
+       <a href="#" class="logout" onclick="logout()">
+        <i class='bx bx-log-out'></i> Logout
+               </a>
+           </span>
+             </div>
+           </div>
+          <!---------------------- YourProfile end -------------------------->        </nav>
+      </header>
+      <div class="iconn" >
+          <a href="https://www.yelp.com/"
+            ><i class="bx bxl-yelp ii"></i
+          ></a>
+          <a href="https://www.tripadvisor.com/"
+            ><i class="fa fa-tripadvisor ff"></i
+          ></a>
+          <a href="https://x.com/wix"><i class="bx bxl-twitter ii" ></i></a>
+          <a href="https://www.instagram.com/wix/#">
+            <i class="bx bxl-instagram ii" ></i
+          ></a>
+        </div>
+    </div>
+    <!-- ////////////////////////////////Contact us section ////////////////////////////////-->
+    <section class="contact">
+      <div class="formContact">
+        <h1>Contact us</h1>
+        <p>
+          We welcome queries, feedback and suggestions. We want to hear from
+          you!
+        </p>
+        <div class="vertical-line"></div>
+        <form id="myForm" novalidate>
+          <label for="fname" class="formE">Enter Your First Name*</label>
+          <input type="text" id="fname" name="fname" required />
+          <span class="errorMessage">
+            <img
+              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
+              alt="Warning Icon"
+            />
+            Please enter your first name</span
+          >
+
+          <label for="lname">Enter Your Last Name*</label>
+          <input type="text" id="lname" name="lname" required />
+          <span class="errorMessage">
+            <img
+              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
+              alt="Warning Icon"
+            />
+            Please enter your last name</span
+          >
+
+          <label for="email">Enter Your Email*</label>
+          <input type="email" id="email" name="email" required />
+          <span class="errorMessage">
+            <img
+              src="https://img.icons8.com/ios-filled/20/fa314a/error.png"
+              alt="Warning Icon"
+            />
+            Please enter your email
+          </span>
+
+          <label for="phone">Enter Your Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="^\+?[0-9\s\-]{7,20}$"
+          />
+
+          <label for="message">Enter Your Message</label>
+          <textarea name="message" rows="5" cols="25"></textarea>
+          <input type="submit" class="submitBtn" />
+        </form>
+      </div>
+
+      <div class="map">
+        <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.990030195292!2d2.325917315673812!3d48.84216707928667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d983f840f1%3A0x9d81a51730234852!2s21%20Bd%20du%20Montparnasse%2C%2075006%20Paris%2C%20France!5e0!3m2!1sen!2sus!4v1715000000000!5m2!1sen!2sus"
+           width="600"
+           height="450"
+           style="border:0;"
+           allowfullscreen=""
+           loading="lazy"
+           referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+      </div>
+    </section>
+    <!-- ////////////////////////////////Footer section ////////////////////////////////-->
+    <footer id="footer" class="footer">
+      <div class="foot">
+        <div class="fff">
+          <div class="tt">
+            <h6>Hungry?</h6>
+            <p> Welcome to 'Oia Poké! Fresh, delicious, and authentic Hawaiian
+              poké bowls made just for you.</p>
+          </div>
+
+          <div class="f1">
+            <img
+              src="home/images/rajiv-bajaj-1284112-unsplash.jpg"
+              alt="photo"
+              class="i1"
+            />
+          </div>
+          <div class="f2">
+            <img
+              src="home/images/wave22-water-sign-water-form-illustration-vector.png"
+              alt="photo"
+            />
+          </div>
+        </div>
+        <div class="fff22">
+          <h3>WE’RE OPEN:</h3>
+        </div>
+
+        <div class="ffff">
+          <div class="ffff1">
+            <h5>
+              Monday - Saturday<br />
+              12pm - 9pm
+            </h5>
+          </div>
+          <div class="ffff2">
+            <h5>500 Terry Francine Street</h5>
+            <h5>San Francisco, CA 94158</h5>
+          </div>
+          <div class="ffff3">
+            <h5>Tel: 123-456-7890</h5>
+            <h5>Email: info@mysite.com</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="line">
+        <h6>
+          © 2035 by 'O ia Poké. Powered and secured by
+          <a href="https://www.wix.com/?utm_campaign=vir_created_with">Wix </a>
+        </h6>
+      </div>
+    </footer>
+
+    <script src="home/script.js"></script>
+    <script src="javascript/contact.js"></script>
+
+  
+  <script> 
+   window.addEventListener("DOMContentLoaded", () => {
+     const username = localStorage.getItem("usernamenav");
+     if (username) {
+       document.getElementById("usernamenav").textContent = username;
+      }
+    });
+    function logout() {
+    localStorage.removeItem('usernamenav');
+    window.location.href = 'home/home.html';
+  }
+  </script>
+  </body>
+</html>
