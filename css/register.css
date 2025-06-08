@@ -8,7 +8,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image:url('../images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-image:url('/images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
 }
 .img-form{
   width: 520px;
-  background-image:url('../images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
+  background-image:url('/images/hawaiian-tuna-poke-bowl-flat-lay-photography.jpg') ;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
