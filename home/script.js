@@ -121,7 +121,7 @@ document.querySelectorAll('.im i').forEach(heart => {
         ff.forEach(el =>el.classList.remove("colore"));
       }
     });
-  },{threshold:0.7});
+  },{threshold:0.5});
 
   observer.observe(footer);
   observer.observe(about);
